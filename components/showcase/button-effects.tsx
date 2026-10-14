@@ -40,7 +40,8 @@ function RippleButton() {
   const nextId = useRef(0)
   function handleClick(e: MouseEvent<HTMLButtonElement>) {
     const id = nextId.current++
-    setRipples((r) => [...r, { id, ...localPoint(e) }])
+    const point = localPoint(e)
+    setRipples((r) => [...r, { id, ...point }])
     setTimeout(() => setRipples((r) => r.filter((p) => p.id !== id)), 700)
   }
   return (
