@@ -2,6 +2,8 @@ import { Orbit, Sparkles } from 'lucide-react'
 import { Hero } from '@/components/showcase/hero'
 import { Palette } from '@/components/showcase/palette'
 import { ComponentsDemo } from '@/components/showcase/components-demo'
+import { MascotGallery } from '@/components/showcase/mascot-gallery'
+import { ButtonEffects } from '@/components/showcase/button-effects'
 
 export default function Page() {
   return (
@@ -17,12 +19,16 @@ export default function Page() {
         <nav aria-label="Chính" className="hidden gap-6 text-sm text-muted-foreground sm:flex">
           <a href="#palette-title" className="hover:text-foreground">Bảng màu</a>
           <a href="#components-title" className="hover:text-foreground">Thành phần</a>
+          <a href="#gallery-title" className="hover:text-foreground">Mascot</a>
+          <a href="#effects-title" className="hover:text-foreground">Hiệu ứng</a>
         </nav>
       </header>
       <main className="relative mx-auto flex max-w-6xl flex-col gap-20 px-6 pb-20 pt-8 md:pt-12">
         <Hero />
         <Palette />
         <ComponentsDemo />
+        <MascotGallery />
+        <ButtonEffects />
       </main>
       <footer className="relative border-t border-border py-6 text-center font-mono text-xs text-muted-foreground">
         <span className="inline-flex items-center gap-1.5">
