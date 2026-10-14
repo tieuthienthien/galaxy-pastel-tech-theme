@@ -5,14 +5,14 @@ import { useRef, useState, type MouseEvent } from 'react'
 import { Floaters, Particles, localPoint, replay, useFloaters, useParticles } from './use-effects'
 
 const MASCOTS = [
-  { src: '/images/astro/coding.png', name: 'Code Mode', caption: 'Gõ phím giữa dải ngân hà', tint: 'bg-pastel-lavender' },
-  { src: '/images/astro/waving.png', name: 'Hello World', caption: 'Chào bạn mới đến trạm', tint: 'bg-pastel-pink' },
-  { src: '/images/astro/planet.png', name: 'Remote Work', caption: 'Văn phòng trên hành tinh nhỏ', tint: 'bg-pastel-mint' },
-  { src: '/images/astro/rocket.png', name: 'Deploy!', caption: 'Phóng bản build lên quỹ đạo', tint: 'bg-pastel-sky' },
-  { src: '/images/astro/sleepy.png', name: 'Sleep Mode', caption: 'Ngủ trưa trên mặt trăng', tint: 'bg-pastel-lavender' },
-  { src: '/images/astro/debug.png', name: 'Bug Hunter', caption: 'Tìm con bug dễ thương', tint: 'bg-pastel-pink' },
-  { src: '/images/astro/party.png', name: 'All Green', caption: 'Test pass hết rồi nè', tint: 'bg-pastel-mint' },
-  { src: '/images/astro/coffee.png', name: 'Coffee Break', caption: 'Cà phê hơi nước hình sao', tint: 'bg-pastel-sky' },
+  { src: '/images/astro/happy.png', name: 'Vui vẻ', caption: 'Code chạy ngon lành', tint: 'bg-pastel-mint' },
+  { src: '/images/astro/love.png', name: 'Yêu thích', caption: 'Mê cái UI này quá', tint: 'bg-pastel-pink' },
+  { src: '/images/astro/excited.png', name: 'Phấn khích', caption: 'Deploy thành công rồi!', tint: 'bg-pastel-lavender' },
+  { src: '/images/astro/surprised.png', name: 'Ngạc nhiên', caption: 'Ơ, sao nó chạy được?', tint: 'bg-pastel-sky' },
+  { src: '/images/astro/thinking.png', name: 'Suy nghĩ', caption: 'Đặt tên biến gì đây', tint: 'bg-pastel-lavender' },
+  { src: '/images/astro/sleepy.png', name: 'Buồn ngủ', caption: 'Code tới 3 giờ sáng', tint: 'bg-pastel-sky' },
+  { src: '/images/astro/sad.png', name: 'Buồn', caption: 'Build lại fail rồi', tint: 'bg-pastel-pink' },
+  { src: '/images/astro/angry.png', name: 'Dỗi', caption: 'Con bug này nữa hả', tint: 'bg-pastel-mint' },
 ]
 
 const BOOPS = ['boop!', 'hihi', 'beep', '+1', 'yay', 'zoom']
@@ -73,10 +73,10 @@ export function MascotGallery() {
       <div className="flex flex-col gap-2">
         <span className="font-mono text-xs uppercase tracking-widest text-pastel-mint">03 / mascot</span>
         <h2 id="gallery-title" className="text-balance text-3xl font-bold md:text-4xl">
-          Gia đình <span className="text-galaxy">Starbuddy</span>
+          Cảm xúc của <span className="text-galaxy">Starbuddy</span>
         </h2>
         <p className="max-w-xl text-pretty text-muted-foreground">
-          8 tư thế phi hành gia cầm laptop. Bấm vào từng bé để nghe tiếng boop và xem mưa sao.
+          8 biểu cảm của cùng một bé phi hành gia cầm laptop. Bấm vào từng bé để nghe tiếng boop và xem mưa sao.
         </p>
       </div>
       <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
